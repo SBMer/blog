@@ -1,0 +1,54 @@
+<!-- 菜单快速导航 -->
+<ul id="menunav">
+    <li class="orderall"><a class="hc" href="#hc" data-ajax="false">荤菜</a></li>
+    <li class="orderall"><a class="sc" href="#sc" data-ajax="false">素菜</a></li>
+    <li class="orderall"><a class="rc" href="#rc" data-ajax="false">热菜</a></li>
+    <li class="orderall"><a class="lc" href="#lc" data-ajax="false">凉菜</a></li>
+    <li class="orderall"><a class="lc" href="#zs" data-ajax="false">主食</a></li>
+    <li class="orderall"><a class="lc" href="#t" data-ajax="false">汤</a></li>
+    <li class="orderall"><a class="lc" href="#js" data-ajax="false">酒水</a></li>
+    <li class="orderall"><a class="lc" href="#qt" data-ajax="false">其他</a></li>
+</ul>
+
+<!-- 全部菜单分类 -->
+<div class="conwidth">
+<div id="tsc"></div>
+<div id="hc"></div>
+<div id="sc"></div>
+<div id="rc"></div>
+<div id="lc"></div>
+<div id="zs"></div>
+<div id="t"></div>
+<div id="js"></div>
+<div id="qt"></div>
+</div>
+<script>
+//加载各种菜单，并写入文档流中(加载作用CSS和JS)
+    $('#tsc').load("data/tsc.html",function(){
+        $("#tsc").trigger('create');
+    });
+    $('#hc').load("data/hc.html",function(){
+        $("#hc").trigger('create');
+    });
+    $('#sc').load("data/sc.html",function(){
+        $("#sc").trigger('create');
+    });
+    $('#rc').load("data/rc.html",function(){
+        $("#rc").trigger('create');
+    });
+    $('#lc').load("data/lc.html",function(){
+        $("#lc").trigger('create');
+    });
+    $('#zs').load("data/zs.html",function(){
+        $("#zs").trigger('create');
+    });
+    $('#t').load("data/t.html",function(){
+        $("#t").trigger('create');
+    });
+    $('#js').load("data/js.html",function(){
+        $("#js").trigger('create');
+    });
+    $('#qt').load("data/qt.html",function(){
+        $("#qt").trigger('create');
+    });
+</script>

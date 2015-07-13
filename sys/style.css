@@ -1,0 +1,299 @@
+﻿/*快捷菜单点击激活区域*/
+:target{
+background-color: #E7E7E7;
+padding-top:30px;
+}
+
+/*菜单选中颜色*/
+.bgs{
+	background-image: linear-gradient(#5f9cc5,#396b9e);
+}
+
+.clear{
+    clear:both;
+}
+
+hr{
+	width:70%;
+}
+
+#orderresult hr{
+	width:100%;
+	margin-top: 25px;
+}
+
+/*快捷导航水平线*/
+.todaysale-searchdata hr, .status-searchdata hr, .updata-searchdata hr{
+	width: 90%;
+}
+
+.todaysale-searchdata li, .status-searchdata li{
+	padding: 10px;
+}
+
+
+.todaysale-searchdatacontent .text_box{
+	width: 10px;
+}
+/*去掉A标签的下划线*/
+a{ text-decoration:none;}
+
+/*底部刷新按钮*/
+.refresh{
+	position:fixed;
+	right: 45%;
+	bottom: 10%;
+    border: 2px solid #ccc;
+    border-radius:25px;
+    padding: 5px;
+}
+
+/*弹出菜单文字描述*/
+.secpop .description{
+	padding: 30px 0;
+	color: #FF9900;
+}
+
+/*底部高度*/
+.bottomline{
+	height: 30px;
+}
+/*快捷菜单分类标题*/
+h6{
+	margin: 0px;
+	padding-top: 25px;
+	padding-bottom: 5px;
+}
+
+/*菜单导航*/
+#menunav{
+  display: none;
+  position:fixed;
+  width: 100%;
+  padding: 0 8px;
+  background: #EEEEEE;
+  top: 18px;
+  left:0;
+  z-index: 2;
+  border-top: 1px solid #DDDDDD;
+}
+
+#menunav li{
+  list-style-type:none;
+  float: left;
+  padding: 0 8px;
+  margin: 5px;
+  border: 1px solid #CCCCCC;
+  border-radius:5px;
+}
+
+#menunav li a{
+	color: #666666;
+	display: block;
+	text-decoration:none;
+	text-shadow:none;
+	font-weight:100;
+}
+
+/*浮动菜单*/
+.fixed-a{
+  position:fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+/*底部购物车*/
+#orderresultnav{
+	display: none;
+	position:fixed;
+	bottom: 0;
+	height: 32px;
+	padding: 5px;
+	width: 100%;
+	background: #CCCCCC;
+	z-index: 2;
+}
+
+#orderresultnav li{
+	height: 32px;
+	line-height: 32px;
+	list-style-type:none;
+	color: black;
+}
+#orderresultnav li span{
+	display: block;
+	width: 30px;
+	float: left;
+	height: 32px;
+	line-height: 32px;
+}
+
+#cartnumpri{
+	float: left;
+	padding-left: 10px;
+}
+
+#cartnum{
+	background-image:url(cartnum.jpg);
+	background-repeat: no-repeat;
+	padding-left: 35px;
+}
+
+#cartprice{
+	background-image:url(cartprice.jpg);
+	background-repeat: no-repeat;
+	padding-left: 35px;
+}
+
+#cartdetails{
+	background-image:url(cartdetails.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+	padding-left: 35px;
+	margin-right: 25px;
+	float: right;
+}
+
+
+
+/****菜单容器，根据可以根据设备调整比例****/
+.conwidth{
+	width: 100%;
+	margin: 0 auto;
+}
+
+/*菜单块容器占比50%*/
+.half{
+	width: 50%;
+	float: left;
+}
+/*
+菜单块
+图片不能太小
+需要根据图片大小调节width
+根据不同大小的屏幕，调整width(边框影响比例)
+*/
+.section{
+width: 95%;
+margin: 5px auto;
+border: 1px solid #ccc;
+border-radius:5px;
+overflow: hidden;
+}
+
+/*图片容器自适应*/
+.smg{
+	display: block;
+	width: 85%;
+	margin: 5px auto;
+}
+
+/*图片自适应*/
+.section .secimg{
+	max-width: 100%;
+	width: 100%;
+	margin: 0 auto;
+	height:auto;
+}
+
+/*菜名*/
+.name{
+text-align:center;
+height: 30px;
+line-height: 30px;
+
+}
+
+/*价格*/
+.price{
+width: 50%;
+height: 30px;
+line-height: 30px;
+float: left;
+text-align:center
+}
+
+/*POP菜单块*/
+.secpop{
+	border: 1px solid #ccc;
+	border-radius:5px;
+	padding:15px;
+}
+
+.ui-popup-container{
+	width: 85%;
+}
+/*POP菜单块图片*/
+.secpop .images {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+/*添加我的订单*/
+.add-item{
+width: 50%;
+float: left;
+height: 30px;
+}
+
+.add-item a{
+	display: block;
+	border:1px solid #ddd;
+	border-radius:100%;
+	height: 25px;
+	line-height: 25px;
+	width: 25px;
+	text-align:center;
+	color:#FF9933 !important;
+	font-size:24px;
+	margin: 0 auto;
+}
+
+
+#orderresult{
+	border: 1px solid #ccc;
+	border-radius:5px;
+	width: 270px;
+        padding:5px;
+}
+
+#orderlist tr{
+	height: 21px;
+}
+
+#orderlist #tab{
+	width: 100%;
+}
+
+#orderlist .nace{
+	float: right;
+}
+
+#orderlist .nace .price{	
+	float: none;
+}
+
+#orderlist .name{
+	display:block;
+	float: left;
+}
+
+#delete table{
+	margin: 0 auto;
+}
+
+.tecsup,#tips{
+	padding-top: 50px;
+}
+
+.discountprice{
+	color: red;
+	font-size: 0.8em;
+}
+
+textarea{
+	overflow-y:visible;
+}
+
